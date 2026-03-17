@@ -128,6 +128,8 @@
       containerized, orchestrated, and continuously deployed using industry-standard tools.
       From writing code to pushing to GitHub — automated pipelines handle building Docker images,
       running tests, and deploying to a Kubernetes cluster running on AWS EC2.
+      Infrastructure is provisioned using <strong>Terraform</strong> with state stored remotely
+      in <strong>AWS S3</strong> with DynamoDB locking for production-grade reliability.
     </div>
   </div>
 
@@ -137,17 +139,22 @@
       <div class="tool-card">
         <div class="icon">☁️</div>
         <div class="name">AWS EC2</div>
-        <div class="desc">Cloud server hosting our Kubernetes nodes</div>
+        <div class="desc">Cloud server hosting our Kubernetes cluster</div>
+      </div>
+      <div class="tool-card">
+        <div class="icon">🏗️</div>
+        <div class="name">Terraform</div>
+        <div class="desc">Infrastructure as code to provision EC2</div>
+      </div>
+      <div class="tool-card">
+        <div class="icon">🪣</div>
+        <div class="name">AWS S3</div>
+        <div class="desc">Remote storage for Terraform state file</div>
       </div>
       <div class="tool-card">
         <div class="icon">🐳</div>
         <div class="name">Docker</div>
         <div class="desc">Containerizing the web application</div>
-      </div>
-      <div class="tool-card">
-        <div class="icon">🧩</div>
-        <div class="name">Docker Compose</div>
-        <div class="desc">Local multi-container development</div>
       </div>
       <div class="tool-card">
         <div class="icon">⚙️</div>
@@ -185,7 +192,7 @@
   </div>
 
   <footer>
-    this project is built by Bahavani Gajanand &nbsp;|&nbsp; DevOps Pipeline Project
+    This project is built by Bahavani Gajanand &nbsp;|&nbsp; DevOps Pipeline Project
   </footer>
 
 </body>
