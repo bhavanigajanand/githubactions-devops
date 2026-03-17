@@ -49,7 +49,7 @@ jobs:
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            export KUBECONFIG=/etc/kubernetes/admin.conf
+            export KUBECONFIG=/home/ubuntu/.kube/config
             kubectl apply -f /home/ubuntu/k8s/deployment.yaml
             kubectl apply -f /home/ubuntu/k8s/service.yaml
             kubectl rollout restart deployment/devops-app
