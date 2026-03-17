@@ -37,7 +37,7 @@ jobs:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
-          source: "k8s/"
+          source: "k8s/deployment.yaml k8s/service.yaml"
           target: "/home/ubuntu/"
           strip_components: 1
 
